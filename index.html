@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sorteador Dracarys</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+<img src="logo.png" alt="Logo da equipe Dracarys">
+<div><h1>Sorteador Dracarys</h1><p>700 números · clique em sortear</p></div>
+</header>
+
+<section class="stage" id="stage" aria-live="polite">
+<div class="num" id="num">?</div>
+<div class="name" id="name">Pronto para o primeiro sorteio</div>
+<div class="btns">
+<button id="go">Sortear</button>
+<button id="reset">Reiniciar</button>
+</div>
+</section>
+
+<div class="cols">
+<section>
+<h2>Sorteados</h2>
+<ol id="hist"><li class="empty">Nenhum número sorteado ainda.</li></ol>
+</section>
+<section>
+<h2>Todos os números</h2>
+<div class="grid" id="grid"></div>
+</section>
+</div>
+<p class="foot">Equipe de Robótica Dracarys</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
